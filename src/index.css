@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@theme {
+  --color-blue-50: #eef0fe;
+  --color-blue-100: #d6ddfb;
+  --color-blue-200: #b5c4f7;
+  --color-blue-300: #8aa3f1;
+  --color-blue-400: #5e7eea;
+  --color-blue-500: #494ea1;
+  --color-blue-600: #363B81;
+  --color-blue-700: #2E3073;
+  --color-blue-800: #272863;
+  --color-blue-900: #1A1C4B;
+
+  --animate-marquee-vertical: marquee-vertical 30s linear infinite;
+  --animate-marquee-vertical-slow: marquee-vertical 40s linear infinite;
+  --animate-marquee-vertical-fast: marquee-vertical 25s linear infinite;
+
+  @keyframes marquee-vertical {
+    0% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.city-ticker-wrap {
+  position: relative;
+}
+
+.theme-gradient {
+  background: linear-gradient(90deg, #5770c8 0%, #2f2a74 100%);
+}
+.theme-gradient:hover {
+  background: linear-gradient(90deg, #485eb0 0%, #221e5e 100%);
+}
+.text-theme-gradient {
+  background: linear-gradient(90deg, #5770c8 0%, #2f2a74 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-gradient-br {
+  background: linear-gradient(135deg, #1b194a 0%, #2f2a74 50%, #5770c8 100%);
+}
+
+.services-scroll {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.4) transparent;
+}
+.services-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+.services-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+}
+
+.city-ticker-track {
+  display: flex;
+  width: max-content;
+  animation: city-scroll-ltr 18s linear infinite;
+}
+
+.city-ticker-content {
+  white-space: nowrap;
+  padding-right: 2rem;
+}
+
+@keyframes city-scroll-ltr {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.cert-ticker-track {
+  display: flex;
+  width: max-content;
+  animation: cert-scroll-ltr 25s linear infinite;
+}
+
+@keyframes cert-scroll-ltr {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.optimalext-about-image {
+  filter: grayscale(1);
+  opacity: 0.8;
+  transform: scale(1.01);
+  transition: filter 500ms ease, opacity 500ms ease, transform 800ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .optimalext-about-visual:hover .optimalext-about-image {
+    filter: grayscale(0);
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
