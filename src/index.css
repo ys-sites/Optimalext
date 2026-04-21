@@ -107,7 +107,7 @@
   transition: filter 500ms ease, opacity 500ms ease, transform 800ms ease;
 }
 
-@media (min-width: 1024px) {
+@media (hover: hover) and (pointer: fine) {
   .optimalext-about-image {
     filter: grayscale(1);
     opacity: 0.8;
