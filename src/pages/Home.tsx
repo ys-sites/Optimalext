@@ -494,14 +494,6 @@ export default function Home() {
                   href={googleReviewLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center rounded-full bg-white text-[#1e3a8a] px-6 py-3 text-sm font-bold hover:bg-gray-100 transition-colors"
-                >
-                  {t('home.testimonials.reviewCtaButton')} <ArrowRight className="ml-2 w-4 h-4" />
-                </a>
-                <a
-                  href={googleReviewLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center rounded-full bg-blue-600 text-white px-6 py-3 text-sm font-bold shadow hover:bg-blue-700 transition-colors"
                 >
                   {t('home.testimonials.leaveReviewButton')} <ArrowRight className="ml-2 w-4 h-4" />
