@@ -50,15 +50,15 @@ export function FloatingHeader() {
 				<Link to="/" className="flex items-center gap-3 px-2 hover:opacity-90 transition-opacity">
 					<img 
 						src="/logo.png" 
-						alt="Optimalext Logo" 
+						alt="Renevation a Montreal Logo" 
 						className="h-[4.5rem] sm:h-16 md:h-[4.5rem] w-auto object-contain" 
 						onError={(e) => {
 							e.currentTarget.style.display = 'none';
 							e.currentTarget.nextElementSibling?.classList.remove('hidden');
 						}}
 					/>
-					<div className="hidden sm:block">
-						<p className="font-sans text-xl font-extrabold text-gray-900 tracking-tight">Optimalext</p>
+					<div className="hidden items-center">
+						<p className="font-sans text-xl font-extrabold text-gray-900 tracking-tight">Renevation a Montreal</p>
 					</div>
 				</Link>
 

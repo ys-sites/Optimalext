@@ -53,32 +53,6 @@ export default function Layout() {
 
   return (
     <div className={cn("min-h-screen flex flex-col font-sans text-gray-900", isContact ? "bg-[#f7f3eb]" : "bg-gray-50")}>
-      {/* Top Bar */}
-      {!isContact && <div className="bg-blue-900 text-white py-2 text-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="sm:hidden overflow-hidden city-ticker-wrap">
-            <div className="city-ticker-track" aria-label={t("layout.serviceCitiesAria")}>
-              <span className="city-ticker-content">{serviceCities}</span>
-              <span className="city-ticker-content" aria-hidden="true">{serviceCities}</span>
-            </div>
-          </div>
-
-          <div className="hidden sm:flex justify-between items-center">
-            <div className="flex items-center space-x-4">
-              <span className="flex items-center"><Phone className="w-4 h-4 mr-2" /> {phoneNumber}</span>
-              <span className="hidden md:flex items-center flex-wrap"><MapPin className="w-4 h-4 mr-2" /> {serviceCities}</span>
-            </div>
-            <div className="flex items-center">
-              <a href="https://www.facebook.com/optimalext" target="_blank" rel="noopener noreferrer" className="hover:text-blue-200 transition-colors" aria-label="Facebook">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>}
-
       {/* Navigation */}
       <div className="w-full h-0 sticky top-0 z-50">
         <div className="w-full px-4 pt-4">
@@ -107,7 +81,7 @@ export default function Layout() {
               <div className="flex items-center mb-6">
                 <img 
                   src="/logo.png" 
-                  alt="Optimalext Logo" 
+                  alt="Renevation a Montreal Logo" 
                   className="h-[4.5rem] w-auto object-contain" 
                   onError={(e) => {
                     e.currentTarget.style.display = 'none';
@@ -115,7 +89,7 @@ export default function Layout() {
                   }}
                 />
                 <div className="hidden items-center">
-                  <span className="font-bold text-2xl tracking-tight text-gray-900">Optimalext</span>
+                  <span className="font-bold text-2xl tracking-tight text-gray-900">Renevation a Montreal</span>
                 </div>
               </div>
               <p className="text-gray-600 mb-6">
@@ -161,7 +135,7 @@ export default function Layout() {
           
           <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-500 text-sm mb-4 md:mb-0 font-medium">
-              &copy; {new Date().getFullYear()} Optimalext. {t('footer.rights')}
+              &copy; {new Date().getFullYear()} Renevation a Montreal. {t('footer.rights')}
             </p>
             <div className="flex space-x-6">
               <a href="https://www.facebook.com/optimalext" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-600 transition-colors">
