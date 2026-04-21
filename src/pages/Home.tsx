@@ -226,7 +226,7 @@ export default function Home() {
                     {service.icon}
                   </div>
                   <h3 className="text-2xl font-bold mb-6 text-white border-b border-white/20 pb-4">{service.title}</h3>
-                  <ul className="space-y-3 mb-6 flex-grow services-scroll max-h-56 pr-2">
+                  <ul className="space-y-3 mb-6 flex-grow">
                     {Array.isArray(service.items) && service.items.map((item, idx) => (
                       <li key={idx} className="flex items-start text-blue-50 text-[13px] md:text-sm leading-snug">
                         <span className="text-blue-400 mr-2 mt-0.5">•</span>
