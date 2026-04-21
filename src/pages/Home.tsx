@@ -136,10 +136,21 @@ export default function Home() {
                   "Brick and stone pointing",
                   "Brick and stone walls",
                   "Chimneys",
-                  "Sill and lintel replacement",
-                  "Parging and foundation repair",
+                  "Sill replacement",
+                  "Lintel replacement",
+                  "Foundation parging",
+                  "Foundation repair",
                   "Brick wall waterproofing",
-                  "Stone balconies and low walls"
+                  "Brick and stone wall anchoring",
+                  "Stone balconies",
+                  "Stone low walls",
+                  "Brick support columns",
+                  "Masonry structure",
+                  "Concrete block installation",
+                  "Flashing installation",
+                  "Brick wall insulation",
+                  "Temporary brick wall stabilization",
+                  "Bulging walls and cracks"
                 ]
               },
               {
@@ -174,12 +185,32 @@ export default function Home() {
                   "Planchers de bois franc et flottants",
                   "Murs de fondations"
                 ] : [
-                  "Ceramic, drywall and plastering",
-                  "Doors and windows installation",
-                  "Balcony repair",
-                  "Aluminum and wrought iron railings",
-                  "Extensions and decks",
-                  "Heated and hardwood floors"
+                  "Ceramic tile installation",
+                  "Drywall and plastering",
+                  "Door and window installation",
+                  "Wooden balcony repair",
+                  "Fiberglass balcony installation",
+                  "Aluminum railings",
+                  "Wrought iron stairs and railings",
+                  "Cornice and flashing repair",
+                  "Roof repair and new roofs",
+                  "Insulation",
+                  "Kitchens",
+                  "Basements",
+                  "Garages",
+                  "Interior partition construction",
+                  "Home additions",
+                  "Bathrooms",
+                  "Commercial offices",
+                  "Fences",
+                  "Foundation wall waterproofing",
+                  "Sump pit and submersible pump installation",
+                  "Extensions",
+                  "Decks / Terraces",
+                  "Heated floors",
+                  "Concrete forms and floors",
+                  "Hardwood and floating floors",
+                  "Foundation walls"
                 ]
               },
               {
@@ -199,8 +230,11 @@ export default function Home() {
                   "Masonry load-bearing walls",
                   "Framed load-bearing walls",
                   "Steel beam installation",
+                  "Temporary support for load-bearing walls",
                   "Roof restructuring",
-                  "Cooperative work with an engineer"
+                  "Main beam solidification",
+                  "Cooperative work with an engineer",
+                  "Joist doubling or replacement"
                 ]
               },
               {
@@ -223,10 +257,19 @@ export default function Home() {
                   "Revêtement de fondations",
                   "Capage de fenêtres"
                 ] : [
-                  "Interior and exterior painting",
-                  "Plastering and caulking",
+                  "Interior painting",
+                  "Cornice painting",
+                  "Wrought iron painting",
+                  "Balcony painting",
+                  "Plastering",
+                  "Caulking",
                   "Exterior staining",
-                  "Waterproofing and moldings",
+                  "Waterproofing",
+                  "Moldings",
+                  "Roof maintenance",
+                  "Roof snow removal",
+                  "Foundation waterproofing",
+                  "Foundation coating",
                   "Window capping"
                 ]
               }
@@ -237,7 +280,7 @@ export default function Home() {
                     {service.icon}
                   </div>
                   <h3 className="text-2xl font-bold mb-6 text-white border-b border-white/20 pb-4">{service.title}</h3>
-                  <ul className="space-y-3 mb-6 flex-grow">
+                  <ul className="space-y-3 mb-6 flex-grow max-h-[400px] services-scroll pr-2">
                     {Array.isArray(service.items) && service.items.map((item, idx) => (
                       <li key={idx} className="flex items-start text-blue-50 text-[13px] md:text-sm leading-snug">
                         <span className="text-blue-400 mr-2 mt-0.5">•</span>
