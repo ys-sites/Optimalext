@@ -46,23 +46,23 @@ export default function Home() {
             <motion.div variants={fadeInUp} className="inline-flex items-center px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 mb-6 text-sm font-bold">
               <Star className="w-4 h-4 mr-2 fill-current" /> {t('home.hero.topRated')}
             </motion.div>
-            <motion.h1 variants={fadeInUp} className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+            <motion.h1 variants={fadeInUp} className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-4 sm:mb-6 leading-tight">
               {t('home.hero.title1')}<br/> <span className="text-blue-400">{t('home.hero.title2')}</span>
             </motion.h1>
-            <motion.p variants={fadeInUp} className="text-xl text-gray-300 mb-10 max-w-2xl leading-relaxed">
+            <motion.p variants={fadeInUp} className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 sm:mb-10 max-w-2xl leading-relaxed">
               {t('home.hero.subtitle')}
             </motion.p>
             <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 mb-6">
               <Link
                 to="/contact"
-                className="theme-gradient text-white px-8 py-4 rounded-full font-bold text-lg transition-all text-center flex items-center justify-center group"
+                className="theme-gradient text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full font-bold text-base sm:text-lg transition-all text-center flex items-center justify-center group"
               >
-                {t('home.hero.getQuote')} <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
+                {t('home.hero.getQuote')} <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 transition-transform group-hover:translate-x-1" />
               </Link>
               <div className="flex flex-row gap-4 md:flex-1 w-full relative z-10">
                 <Link
                   to="/#services"
-                  className="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-full font-bold text-lg transition-all text-center flex items-center justify-center whitespace-nowrap"
+                  className="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full font-bold text-base sm:text-lg transition-all text-center flex items-center justify-center whitespace-nowrap"
                 >
                   {t('home.hero.ourServices')}
                 </Link>
@@ -70,7 +70,7 @@ export default function Home() {
                   href="https://www.facebook.com/optimalext"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-[60px] h-[60px] md:w-auto md:aspect-square bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white rounded-full flex items-center justify-center transition-all shadow-[0_8px_30px_rgba(0,0,0,0.12)] group/fb flex-shrink-0"
+                  className="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] md:w-auto md:aspect-square bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white rounded-full flex items-center justify-center transition-all shadow-[0_8px_30px_rgba(0,0,0,0.12)] group/fb flex-shrink-0 hardware-accelerate"
                   aria-label="Facebook"
                 >
                   <Facebook className="w-6 h-6 group-hover/fb:text-blue-400 group-hover/fb:scale-110 transition-all" />
@@ -92,11 +92,11 @@ export default function Home() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
-            className="text-center mb-12 md:mb-16"
+            className="text-center mb-10 md:mb-16"
           >
-            <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-4">{t('home.services4.title', 'SERVICES')}</h2>
-            <div className="w-24 h-1 bg-blue-400 mx-auto mb-6 rounded-full" />
-            <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto uppercase tracking-wide">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-4">{t('home.services4.title', 'SERVICES')}</h2>
+            <div className="w-16 sm:w-24 h-1 bg-blue-400 mx-auto mb-4 sm:mb-6 rounded-full" />
+            <p className="text-base md:text-xl text-gray-300 max-w-2xl mx-auto uppercase tracking-wide">
               {t('home.services4.subtitle', 'CONTACTEZ-NOUS POUR UNE ÉVALUATION GRATUITE')}
             </p>
           </motion.div>
@@ -274,13 +274,13 @@ export default function Home() {
                 ]
               }
             ].map((service) => (
-              <motion.div key={service.id} variants={fadeInUp} className="bg-white/10 backdrop-blur-md rounded-3xl overflow-hidden border border-white/20 shadow-xl flex flex-col group hover:bg-white/15 transition-colors">
-                <div className="p-8 flex-grow flex flex-col">
-                  <div className="bg-white w-20 h-20 flex-shrink-0 rounded-2xl flex items-center justify-center mb-6 shadow-md transform transition-transform group-hover:scale-110">
+              <motion.div key={service.id} variants={fadeInUp} className="bg-white/10 backdrop-blur-md rounded-3xl overflow-hidden border border-white/20 shadow-xl flex flex-col group hover:bg-white/15 transition-colors hardware-accelerate">
+                <div className="p-6 sm:p-8 flex-grow flex flex-col">
+                  <div className="bg-white w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 rounded-2xl flex items-center justify-center mb-4 sm:mb-6 shadow-md transform transition-transform group-hover:scale-110">
                     {service.icon}
                   </div>
-                  <h3 className="text-2xl font-bold mb-6 text-white border-b border-white/20 pb-4">{service.title}</h3>
-                  <ul className="space-y-3 mb-6 flex-grow max-h-[400px] services-scroll pr-2">
+                  <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-white border-b border-white/20 pb-3 sm:pb-4">{service.title}</h3>
+                  <ul className="space-y-2 sm:space-y-3 mb-6 flex-grow max-h-[300px] sm:max-h-[400px] services-scroll pr-2 hardware-accelerate">
                     {Array.isArray(service.items) && service.items.map((item, idx) => (
                       <li key={idx} className="flex items-start text-blue-50 text-[13px] md:text-sm leading-snug">
                         <span className="text-blue-400 mr-2 mt-0.5">•</span>
@@ -306,10 +306,10 @@ export default function Home() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
-            className="text-center mb-12 md:mb-16"
+            className="text-center mb-10 md:mb-16"
           >
-            <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-6">{t('home.process.title')}</h2>
-            <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-4 sm:mb-6">{t('home.process.title')}</h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
               {t('home.process.subtitle')}
             </p>
           </motion.div>
@@ -326,23 +326,23 @@ export default function Home() {
             
             {/* Step 1 */}
             <motion.div variants={fadeInUp} className="relative flex flex-col items-center text-center">
-              <div className="w-20 h-20 rounded-full bg-[#1e40af] flex items-center justify-center text-white text-2xl font-bold mb-6 relative z-10 shadow-lg shadow-blue-900/20">1</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">{t('home.process.step1')}</h3>
-              <p className="text-gray-600">{t('home.process.step1Desc')}</p>
+              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#1e40af] flex items-center justify-center text-white text-xl sm:text-2xl font-bold mb-4 sm:mb-6 relative z-10 shadow-lg shadow-blue-900/20">1</div>
+              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-4">{t('home.process.step1')}</h3>
+              <p className="text-sm sm:text-base text-gray-600">{t('home.process.step1Desc')}</p>
             </motion.div>
             
             {/* Step 2 */}
             <motion.div variants={fadeInUp} className="relative flex flex-col items-center text-center">
-              <div className="w-20 h-20 rounded-full bg-[#1e40af] flex items-center justify-center text-white text-2xl font-bold mb-6 relative z-10 shadow-lg shadow-blue-900/20">2</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">{t('home.process.step2')}</h3>
-              <p className="text-gray-600">{t('home.process.step2Desc')}</p>
+              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#1e40af] flex items-center justify-center text-white text-xl sm:text-2xl font-bold mb-4 sm:mb-6 relative z-10 shadow-lg shadow-blue-900/20">2</div>
+              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-4">{t('home.process.step2')}</h3>
+              <p className="text-sm sm:text-base text-gray-600">{t('home.process.step2Desc')}</p>
             </motion.div>
             
             {/* Step 3 */}
             <motion.div variants={fadeInUp} className="relative flex flex-col items-center text-center">
-              <div className="w-20 h-20 rounded-full bg-[#1e40af] flex items-center justify-center text-white text-2xl font-bold mb-6 relative z-10 shadow-lg shadow-blue-900/20">3</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">{t('home.process.step3')}</h3>
-              <p className="text-gray-600">{t('home.process.step3Desc')}</p>
+              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#1e40af] flex items-center justify-center text-white text-xl sm:text-2xl font-bold mb-4 sm:mb-6 relative z-10 shadow-lg shadow-blue-900/20">3</div>
+              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-4">{t('home.process.step3')}</h3>
+              <p className="text-sm sm:text-base text-gray-600">{t('home.process.step3Desc')}</p>
             </motion.div>
           </motion.div>
         </div>
@@ -350,22 +350,24 @@ export default function Home() {
 
       {/* Why Choose Us Section */}
       <section className="bg-[#0a0a0a] flex flex-col lg:flex-row">
-        <div className="optimalext-about-visual lg:w-1/2 relative min-h-[300px] md:aspect-[4/3] lg:min-h-auto lg:aspect-auto overflow-hidden">
+        <div className="optimalext-about-visual lg:w-1/2 relative min-h-[300px] md:aspect-[4/3] lg:min-h-auto lg:aspect-auto overflow-hidden hardware-accelerate">
           <img 
             src="/about.jpeg" 
             alt="About Optimalext" 
+            loading="lazy"
+            decoding="async"
             className="optimalext-about-image absolute inset-0 w-full h-full object-cover object-[68%_center] md:object-[calc(0%-20%)_center] lg:object-center"
           />
         </div>
-        <div className="lg:w-1/2 p-8 md:p-12 lg:p-24 flex flex-col justify-center">
+        <div className="lg:w-1/2 p-6 sm:p-8 md:p-12 lg:p-24 flex flex-col justify-center">
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-4">{t('home.whyUs.title')} <span className="text-white font-light hidden md:inline">|</span></h2>
-            <p className="text-lg md:text-xl text-gray-400 mb-6">{t('about.subtitle')}</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-4">{t('home.whyUs.title')} <span className="text-white font-light hidden md:inline">|</span></h2>
+            <p className="text-base md:text-lg lg:text-xl text-gray-400 mb-6">{t('about.subtitle')}</p>
             
             <p className="text-gray-300 mb-4 leading-relaxed font-semibold">
               {t('about.description')}
@@ -418,10 +420,10 @@ export default function Home() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
-            className="text-center mb-12 md:mb-16"
+            className="text-center mb-10 md:mb-16"
           >
-            <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-6">{t('home.portfolio.title')}</h2>
-            <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-4 sm:mb-6">{t('home.portfolio.title')}</h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
               {t('home.portfolio.subtitle')}
             </p>
           </motion.div>
@@ -439,8 +441,8 @@ export default function Home() {
               { id: 3, title: isFr ? 'Installation de Mur de Pierre' : 'Stone Wall Installation', category: isFr ? 'Maçonnerie' : 'Masonry', image: "/renovation-generale_03_thumb.jpg" },
               { id: 4, title: isFr ? 'Revêtement Extérieur et Finitions' : 'Exterior Siding & Finishes', category: isFr ? 'Finition' : 'Finishing', image: "/renovation-generale_04_thumb.jpg" }
             ].map((item) => (
-              <motion.div key={item.id} variants={fadeInUp} className="group relative rounded-2xl overflow-hidden shadow-lg border border-gray-100 aspect-[4/5] block cursor-pointer">
-                <img src={item.image} alt={item.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <motion.div key={item.id} variants={fadeInUp} className="group relative rounded-2xl overflow-hidden shadow-lg border border-gray-100 aspect-[4/5] block cursor-pointer hardware-accelerate">
+                <img src={item.image} alt={item.title} loading="lazy" decoding="async" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-6 w-full">
                   <span className="inline-block bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wider">{item.category}</span>
@@ -472,29 +474,29 @@ export default function Home() {
         <div className="absolute inset-0 bg-blue-800/90"></div> {/* Blue blend overlay */}
         <div className="absolute left-0 top-0 w-16 md:w-32 h-full bg-gradient-to-r from-blue-800 to-transparent z-10 pointer-events-none"></div>
         <div className="absolute right-0 top-0 w-16 md:w-32 h-full bg-gradient-to-l from-blue-800 to-transparent z-10 pointer-events-none"></div>
-        <div className="text-center mb-8 relative z-20">
-          <h2 className="text-white font-extrabold text-2xl md:text-4xl uppercase tracking-wider px-4 drop-shadow-md">
+        <div className="text-center mb-6 sm:mb-8 relative z-20">
+          <h2 className="text-white font-extrabold text-xl sm:text-2xl md:text-4xl uppercase tracking-wider px-4 drop-shadow-md">
             NOUS SOMMES MEMBRES EN RÈGLE
           </h2>
         </div>
-        <div className="cert-ticker-track flex items-center space-x-12 md:space-x-24 relative z-20">
+        <div className="cert-ticker-track flex items-center space-x-12 md:space-x-24 relative z-20 hardware-accelerate">
           {[...Array(3)].map((_, i) => (
             <div key={i} className="flex space-x-12 md:space-x-24 flex-shrink-0 items-center">
               <div className="flex flex-col items-center">
-                <span className="text-white font-black text-4xl md:text-5xl tracking-tighter drop-shadow-sm">RBQ</span>
-                <span className="text-white text-[10px] md:text-xs font-bold w-48 text-center uppercase leading-tight mt-2">RÉGIE DU BÂTIMENT DU QUÉBEC</span>
+                <span className="text-white font-black text-3xl sm:text-4xl md:text-5xl tracking-tighter drop-shadow-sm">RBQ</span>
+                <span className="text-white text-[9px] sm:text-[10px] md:text-xs font-bold w-40 sm:w-48 text-center uppercase leading-tight mt-1 sm:mt-2">RÉGIE DU BÂTIMENT DU QUÉBEC</span>
               </div>
               <div className="flex flex-col items-center">
-                <span className="text-white font-black text-4xl md:text-5xl tracking-tighter italic drop-shadow-sm">ACQ</span>
-                <span className="text-white text-[10px] md:text-xs font-bold w-48 text-center uppercase leading-tight mt-2">ASSOCIATION DES ENTREPRENEURS EN CONSTRUCTION DU QUÉBEC</span>
+                <span className="text-white font-black text-3xl sm:text-4xl md:text-5xl tracking-tighter italic drop-shadow-sm">ACQ</span>
+                <span className="text-white text-[9px] sm:text-[10px] md:text-xs font-bold w-40 sm:w-48 text-center uppercase leading-tight mt-1 sm:mt-2">ASSOCIATION DES ENTREPRENEURS EN CONSTRUCTION DU QUÉBEC</span>
               </div>
               <div className="flex flex-col items-center">
-                <span className="text-white font-black text-4xl md:text-5xl tracking-tighter drop-shadow-sm">CSST</span>
-                <span className="text-white text-[10px] md:text-xs font-bold w-48 text-center uppercase leading-tight mt-2">COMMISSION DE LA SANTÉ ET DE LA SÉCURITÉ AU TRAVAIL</span>
+                <span className="text-white font-black text-3xl sm:text-4xl md:text-5xl tracking-tighter drop-shadow-sm">CSST</span>
+                <span className="text-white text-[9px] sm:text-[10px] md:text-xs font-bold w-40 sm:w-48 text-center uppercase leading-tight mt-1 sm:mt-2">COMMISSION DE LA SANTÉ ET DE LA SÉCURITÉ AU TRAVAIL</span>
               </div>
               <div className="flex flex-col items-center">
-                <span className="text-white font-black text-4xl md:text-5xl tracking-tighter drop-shadow-sm">CCQ</span>
-                <span className="text-white text-[10px] md:text-xs font-bold w-48 text-center uppercase leading-tight mt-2">COMMISSION DE LA CONSTRUCTION DU QUÉBEC</span>
+                <span className="text-white font-black text-3xl sm:text-4xl md:text-5xl tracking-tighter drop-shadow-sm">CCQ</span>
+                <span className="text-white text-[9px] sm:text-[10px] md:text-xs font-bold w-40 sm:w-48 text-center uppercase leading-tight mt-1 sm:mt-2">COMMISSION DE LA CONSTRUCTION DU QUÉBEC</span>
               </div>
             </div>
           ))}
@@ -509,10 +511,10 @@ export default function Home() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
-            className="text-center mb-12 md:mb-16"
+            className="text-center mb-10 md:mb-16"
           >
-            <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-6">{t('home.testimonials.title')}</h2>
-            <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-4 sm:mb-6">{t('home.testimonials.title')}</h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
               {t('home.testimonials.subtitle')}
             </p>
           </motion.div>
@@ -524,12 +526,12 @@ export default function Home() {
             variants={fadeInUp}
             className="max-w-3xl mx-auto mb-10"
           >
-            <div className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm px-6 py-7 text-center shadow-xl shadow-black/20">
-              <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-white/10 text-yellow-300 mb-4">
-                <Star className="w-7 h-7 fill-current" />
+            <div className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm px-5 py-6 sm:px-6 sm:py-7 text-center shadow-xl shadow-black/20">
+              <div className="inline-flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-white/10 text-yellow-300 mb-4">
+                <Star className="w-6 h-6 sm:w-7 sm:h-7 fill-current" />
               </div>
-              <h3 className="text-2xl font-bold text-white mb-3">{t('home.testimonials.reviewCtaTitle')}</h3>
-              <p className="text-gray-300 mb-6 max-w-xl mx-auto">
+              <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 sm:mb-3">{t('home.testimonials.reviewCtaTitle')}</h3>
+              <p className="text-sm sm:text-base text-gray-300 mb-6 max-w-xl mx-auto">
                 {t('home.testimonials.reviewCtaText')}
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

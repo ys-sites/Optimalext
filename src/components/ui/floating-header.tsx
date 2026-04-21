@@ -41,7 +41,7 @@ export function FloatingHeader() {
 	return (
 		<header
 			className={cn(
-				'mx-auto w-full max-w-7xl rounded-full border border-gray-200 shadow-lg',
+				'mx-auto w-full max-w-7xl rounded-full border border-gray-200 shadow-lg hardware-accelerate',
 				'bg-white/95 supports-[backdrop-filter]:bg-white/90 backdrop-blur-md',
 			)}
 		>

@@ -40,7 +40,7 @@ export function TestimonialMarquee() {
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#050505] to-transparent z-10 pointer-events-none"></div>
 
       <div className="flex-1 overflow-hidden relative">
-        <div className="animate-marquee-vertical flex flex-col">
+        <div className="animate-marquee-vertical flex flex-col hardware-accelerate">
           {column1.map((review, i) => (
             <ReviewCard key={i} review={review} />
           ))}
@@ -48,7 +48,7 @@ export function TestimonialMarquee() {
       </div>
       
       <div className="flex-1 overflow-hidden relative hidden md:block">
-        <div className="animate-marquee-vertical flex flex-col">
+        <div className="animate-marquee-vertical flex flex-col hardware-accelerate" style={{ animationDelay: '-15s' }}>
           {column2.map((review, i) => (
             <ReviewCard key={i} review={review} />
           ))}
@@ -56,7 +56,7 @@ export function TestimonialMarquee() {
       </div>
 
       <div className="flex-1 overflow-hidden relative hidden lg:block">
-        <div className="animate-marquee-vertical flex flex-col">
+        <div className="animate-marquee-vertical flex flex-col hardware-accelerate" style={{ animationDelay: '-5s' }}>
           {column3.map((review, i) => (
             <ReviewCard key={i} review={review} />
           ))}

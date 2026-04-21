@@ -18,10 +18,10 @@
 
   @keyframes marquee-vertical {
     0% {
-      transform: translateY(0%);
+      transform: translateY(0%) translateZ(0);
     }
     100% {
-      transform: translateY(-50%);
+      transform: translateY(-50%) translateZ(0);
     }
   }
 }
@@ -95,11 +95,11 @@
 
 @keyframes city-scroll-ltr {
   0% {
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateZ(0);
   }
 
   100% {
-    transform: translateX(0%);
+    transform: translateX(0%) translateZ(0);
   }
 }
 
@@ -111,11 +111,18 @@
 
 @keyframes cert-scroll-ltr {
   0% {
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateZ(0);
   }
   100% {
-    transform: translateX(0%);
+    transform: translateX(0%) translateZ(0);
   }
+}
+
+.hardware-accelerate {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  will-change: transform, opacity;
 }
 
 .optimalext-about-image {

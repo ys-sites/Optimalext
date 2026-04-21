@@ -84,9 +84,9 @@ export default function Contact() {
             "/renovation-generale_09_thumb.jpg", "/renovation-generale_10_thumb.jpg", "/renovation-generale_11_thumb.jpg", "/renovation-generale_12_thumb.jpg", "/renovation-generale_13_thumb.jpg", "/renovation-generale_14_thumb.jpg",
             "/renovation-generale_15_thumb.jpg", "/renovation-generale_16_thumb.jpg", "/renovation-generale_01_thumb.jpg", "/renovation-generale_02_thumb.jpg", "/renovation-generale_03_thumb.jpg", "/renovation-generale_04_thumb.jpg"
           ].map((img, i) => (
-            <div key={i} className="relative group/item">
-              <img src={img} alt="" className="w-full h-full object-cover opacity-5 group-hover/main:blur-sm group-hover/main:opacity-10 transition-all duration-500" />
-              <img src={img} alt="" className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/item:opacity-100 group-hover/item:blur-0 transition-all duration-300 z-10" />
+            <div key={i} className="relative group/item hardware-accelerate">
+              <img src={img} alt="" loading="lazy" decoding="async" className="w-full h-full object-cover opacity-5 group-hover/main:blur-sm group-hover/main:opacity-10 transition-all duration-500" />
+              <img src={img} alt="" loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/item:opacity-100 group-hover/item:blur-0 transition-all duration-300 z-10" />
             </div>
           ))}
         </div>
@@ -101,12 +101,12 @@ export default function Contact() {
           className="text-center mb-16"
         >
           <motion.h1 
-            className="text-3xl md:text-6xl font-extrabold text-gray-900 mb-6"
+            className="text-3xl sm:text-4xl md:text-6xl font-extrabold text-gray-900 mb-4 sm:mb-6"
           >
             {t('nav.contact')}
           </motion.h1>
           <motion.p 
-            className="text-xl text-gray-600 max-w-2xl mx-auto"
+            className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto"
           >
             {t('home.cta.subtitle')}
           </motion.p>
@@ -122,7 +122,7 @@ export default function Contact() {
           <motion.div
             variants={fadeInUp}
             id="contact-form"
-            className="bg-[#fffdf8]/94 rounded-3xl shadow-[0_32px_80px_rgba(148,163,184,0.22)] p-8 md:p-12 border border-[#fffaf0]/90"
+            className="bg-[#fffdf8]/94 rounded-3xl shadow-[0_32px_80px_rgba(148,163,184,0.22)] p-6 sm:p-8 md:p-12 border border-[#fffaf0]/90"
           >
             {isSuccess ? (
               <motion.div 
