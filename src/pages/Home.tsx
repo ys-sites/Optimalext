@@ -350,11 +350,11 @@ export default function Home() {
 
       {/* Why Choose Us Section */}
       <section className="bg-[#0a0a0a] flex flex-col lg:flex-row">
-        <div className="optimalext-about-visual lg:w-1/2 relative min-h-[300px] md:aspect-video lg:min-h-auto lg:aspect-auto overflow-hidden">
+        <div className="optimalext-about-visual lg:w-1/2 relative min-h-[300px] md:aspect-[4/3] lg:min-h-auto lg:aspect-auto overflow-hidden">
           <img 
             src="/about.jpeg" 
             alt="About Optimalext" 
-            className="optimalext-about-image absolute inset-0 w-full h-full object-cover object-left md:object-center lg:object-center"
+            className="optimalext-about-image absolute inset-0 w-full h-full object-cover object-left md:object-[30%_center] lg:object-center"
           />
         </div>
         <div className="lg:w-1/2 p-8 md:p-12 lg:p-24 flex flex-col justify-center">
