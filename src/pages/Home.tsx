@@ -380,10 +380,10 @@ export default function Home() {
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-12"
           >
             {[
-              { id: 1, title: t('home.portfolio.previewItems.0.title', 'Rénovation Maçonnerie'), category: t('home.portfolio.previewItems.0.category', 'Maçonnerie'), image: "/renovation-generale_01_thumb.jpg" },
-              { id: 2, title: t('home.portfolio.previewItems.1.title', 'Travaux de Charpente'), category: t('home.portfolio.previewItems.1.category', 'Menuiserie'), image: "/renovation-generale_02_thumb.jpg" },
-              { id: 3, title: "Rénovation Commerciale", category: "Structure", image: "/renovation-generale_03_thumb.jpg" },
-              { id: 4, title: "Structure et Escalier", category: "Finition", image: "/renovation-generale_04_thumb.jpg" }
+              { id: 1, title: isFr ? 'Réparation de Fondation' : 'Foundation Repair', category: isFr ? 'Maçonnerie' : 'Masonry', image: "/renovation-generale_01_thumb.jpg" },
+              { id: 2, title: isFr ? 'Installation de Balcon et Terrasse' : 'Balcony & Deck Installation', category: isFr ? 'Menuiserie' : 'Carpentry', image: "/renovation-generale_02_thumb.jpg" },
+              { id: 3, title: isFr ? 'Installation de Mur de Pierre' : 'Stone Wall Installation', category: isFr ? 'Maçonnerie' : 'Masonry', image: "/renovation-generale_03_thumb.jpg" },
+              { id: 4, title: isFr ? 'Revêtement Extérieur et Finitions' : 'Exterior Siding & Finishes', category: isFr ? 'Finition' : 'Finishing', image: "/renovation-generale_04_thumb.jpg" }
             ].map((item) => (
               <motion.div key={item.id} variants={fadeInUp} className="group relative rounded-2xl overflow-hidden shadow-lg border border-gray-100 aspect-[4/5] block cursor-pointer">
                 <img src={item.image} alt={item.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
