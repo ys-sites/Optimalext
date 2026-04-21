@@ -72,8 +72,27 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen pt-24 pb-16 md:pt-32 md:pb-24 bg-[#f7f3eb]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen pt-24 pb-16 md:pt-32 md:pb-24 bg-[#f7f3eb] relative overflow-hidden group/main">
+      {/* Background Images with Fade */}
+      <div className="absolute inset-0 z-0 pointer-events-auto">
+        <div className="grid grid-cols-3 md:grid-cols-6 grid-rows-6 h-full">
+          {[
+            "/renovation-generale_01_thumb.jpg", "/renovation-generale_02_thumb.jpg", "/renovation-generale_03_thumb.jpg", "/renovation-generale_04_thumb.jpg", "/renovation-generale_05_thumb.jpg", "/renovation-generale_06_thumb.jpg",
+            "/renovation-generale_07_thumb.jpg", "/renovation-generale_08_thumb.jpg", "/renovation-generale_09_thumb.jpg", "/renovation-generale_10_thumb.jpg", "/renovation-generale_11_thumb.jpg", "/renovation-generale_12_thumb.jpg",
+            "/renovation-generale_13_thumb.jpg", "/renovation-generale_14_thumb.jpg", "/renovation-generale_15_thumb.jpg", "/renovation-generale_16_thumb.jpg", "/renovation-generale_01_thumb.jpg", "/renovation-generale_02_thumb.jpg",
+            "/renovation-generale_03_thumb.jpg", "/renovation-generale_04_thumb.jpg", "/renovation-generale_05_thumb.jpg", "/renovation-generale_06_thumb.jpg", "/renovation-generale_07_thumb.jpg", "/renovation-generale_08_thumb.jpg",
+            "/renovation-generale_09_thumb.jpg", "/renovation-generale_10_thumb.jpg", "/renovation-generale_11_thumb.jpg", "/renovation-generale_12_thumb.jpg", "/renovation-generale_13_thumb.jpg", "/renovation-generale_14_thumb.jpg",
+            "/renovation-generale_15_thumb.jpg", "/renovation-generale_16_thumb.jpg", "/renovation-generale_01_thumb.jpg", "/renovation-generale_02_thumb.jpg", "/renovation-generale_03_thumb.jpg", "/renovation-generale_04_thumb.jpg"
+          ].map((img, i) => (
+            <div key={i} className="relative group/item">
+              <img src={img} alt="" className="w-full h-full object-cover opacity-5 group-hover/main:blur-sm group-hover/main:opacity-10 transition-all duration-500" />
+              <img src={img} alt="" className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/item:opacity-100 group-hover/item:blur-0 transition-all duration-300 z-10" />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
         <motion.div
           initial="hidden"
           whileInView="visible"
