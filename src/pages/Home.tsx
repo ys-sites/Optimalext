@@ -66,45 +66,12 @@ export default function Home() {
                 {t('home.hero.ourServices')}
               </Link>
             </motion.div>
-            <motion.div variants={fadeInUp} className="inline-flex items-center px-4 py-2 rounded-full bg-blue-600/20 border border-blue-400/30 text-blue-50 text-sm font-medium backdrop-blur-md shadow-[inset_0_0_10px_rgba(59,130,246,0.2)]">
-              <Clock className="w-4 h-4 mr-2 text-blue-300" /> {t('home.hero.trust')}
-            </motion.div>
+
           </motion.div>
         </div>
       </section>
 
-      {/* Hero Features Cards Overlap */}
-      <div className="relative z-20 -mt-24 pb-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div 
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
-          variants={staggerContainer}
-          className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8"
-        >
-          <motion.div variants={fadeInUp} className="flex flex-col items-center text-center p-8 rounded-2xl bg-white shadow-xl shadow-gray-200/50 border border-gray-100 transform transition-transform hover:-translate-y-1">
-            <div className="bg-[#eef0fe] p-4 flex items-center justify-center rounded-2xl mb-5 text-[#363B81]">
-              <Star className="w-8 h-8 fill-current" />
-            </div>
-            <h3 className="text-xl font-extrabold mb-3 text-gray-900">{t('home.features.ratingTitle')}</h3>
-            <p className="text-gray-500 text-sm leading-relaxed">{t('home.features.ratingDesc')}</p>
-          </motion.div>
-          <motion.div variants={fadeInUp} className="flex flex-col items-center text-center p-8 rounded-2xl bg-white shadow-xl shadow-gray-200/50 border border-gray-100 transform transition-transform hover:-translate-y-1">
-            <div className="bg-[#eef0fe] p-4 flex items-center justify-center rounded-2xl mb-5 text-[#363B81]">
-              <ShieldCheck className="w-8 h-8" />
-            </div>
-            <h3 className="text-xl font-extrabold mb-3 text-gray-900">{t('home.features.experienceTitle')}</h3>
-            <p className="text-gray-500 text-sm leading-relaxed">{t('home.features.experienceDesc')}</p>
-          </motion.div>
-          <motion.div variants={fadeInUp} className="flex flex-col items-center text-center p-8 rounded-2xl bg-white shadow-xl shadow-gray-200/50 border border-gray-100 transform transition-transform hover:-translate-y-1">
-            <div className="bg-[#eef0fe] p-4 flex items-center justify-center rounded-2xl mb-5 text-[#363B81]">
-              <Paintbrush className="w-8 h-8 flex-shrink-0" />
-            </div>
-            <h3 className="text-xl font-extrabold mb-3 text-gray-900">{t('home.features.prep')}</h3>
-            <p className="text-gray-500 text-sm leading-relaxed">{t('home.features.prepDesc')}</p>
-          </motion.div>
-        </motion.div>
-      </div>
+
 
       {/* Services Preview */}
       <section id="services" className="py-16 md:py-24 theme-gradient-br">
