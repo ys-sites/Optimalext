@@ -68,7 +68,7 @@ export default function Layout() {
       <a
         href={contactFormHref}
         aria-label={t("layout.openContactForm")}
-        className="lg:hidden fixed bottom-5 right-5 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#363B81] text-white shadow-[0_18px_35px_rgba(54,59,129,0.35)] transition-transform duration-200 active:scale-95"
+        className="lg:hidden fixed bottom-5 right-5 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#1e40af] text-white shadow-[0_18px_35px_rgba(54,59,129,0.35)] transition-transform duration-200 active:scale-95"
       >
         <Phone className="h-6 w-6" />
       </a>

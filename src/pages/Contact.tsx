@@ -205,7 +205,7 @@ export default function Contact() {
                   <button 
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-gradient-to-r from-[#363B81] to-[#363B81] text-white font-extrabold py-4 md:py-5 rounded-2xl text-base md:text-xl shadow-xl shadow-blue-200 transition-all flex items-center justify-center gap-2 group disabled:opacity-70 disabled:cursor-not-allowed"
+                    className="w-full bg-gradient-to-r from-[#1e40af] to-[#1e40af] text-white font-extrabold py-4 md:py-5 rounded-2xl text-base md:text-xl shadow-xl shadow-blue-200 transition-all flex items-center justify-center gap-2 group disabled:opacity-70 disabled:cursor-not-allowed"
                   >
                     {isSubmitting ? (
                       <>

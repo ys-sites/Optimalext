@@ -74,7 +74,7 @@ export function FloatingHeader() {
 								className={cn(
 									"px-4 xl:px-5 py-2 rounded-full text-sm font-semibold whitespace-nowrap transition-all duration-200",
 									isActive 
-										? "bg-[#363B81]/15 text-[#363B81]" 
+										? "bg-[#1e40af]/15 text-[#1e40af]" 
 										: "text-gray-600 hover:text-gray-900 hover:bg-gray-200/50"
 								)}
 								to={{ pathname: link.path, hash: link.hash }}
@@ -93,7 +93,7 @@ export function FloatingHeader() {
 							onClick={() => handleLangChange('EN')}
 							className={cn(
 								"px-2.5 py-1.5 text-[11px] sm:text-xs font-bold rounded-full transition-all duration-200",
-								lang === 'EN' ? "bg-white shadow-sm text-[#363B81]" : "text-gray-500 hover:text-gray-700"
+								lang === 'EN' ? "bg-white shadow-sm text-[#1e40af]" : "text-gray-500 hover:text-gray-700"
 							)}
 						>
 							EN
@@ -102,7 +102,7 @@ export function FloatingHeader() {
 							onClick={() => handleLangChange('FR')}
 							className={cn(
 								"px-2.5 py-1.5 text-[11px] sm:text-xs font-bold rounded-full transition-all duration-200",
-								lang === 'FR' ? "bg-white shadow-sm text-[#363B81]" : "text-gray-500 hover:text-gray-700"
+								lang === 'FR' ? "bg-white shadow-sm text-[#1e40af]" : "text-gray-500 hover:text-gray-700"
 							)}
 						>
 							FR
@@ -112,7 +112,7 @@ export function FloatingHeader() {
 					{/* CTA Button */}
 					<Link 
 						to="/contact" 
-						className="hidden sm:inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#4278c4] to-[#363B81] text-white whitespace-nowrap px-5 xl:px-6 py-2.5 text-sm font-bold shadow-md hover:shadow-lg transition-all hover:scale-105"
+						className="hidden sm:inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#4278c4] to-[#1e40af] text-white whitespace-nowrap px-5 xl:px-6 py-2.5 text-sm font-bold shadow-md hover:shadow-lg transition-all hover:scale-105"
 					>
 						{t('nav.getQuote')}
 						<ArrowRight className="w-4 h-4" />
@@ -145,7 +145,7 @@ export function FloatingHeader() {
 											(link.hash
 												? location.pathname === link.path && location.hash === link.hash
 												: location.pathname === link.path && !location.hash)
-													? 'bg-[#363B81]/10 text-[#363B81] font-bold'
+													? 'bg-[#1e40af]/10 text-[#1e40af] font-bold'
 													: 'text-gray-600 font-medium'
 										)}
 										to={{ pathname: link.path, hash: link.hash }}
@@ -161,7 +161,7 @@ export function FloatingHeader() {
 										onClick={() => handleLangChange('EN')}
 										className={cn(
 											"flex-1 py-3 text-sm font-bold rounded-lg transition-colors",
-											lang === 'EN' ? "bg-white shadow-sm text-[#363B81]" : "text-gray-500 hover:text-gray-700"
+											lang === 'EN' ? "bg-white shadow-sm text-[#1e40af]" : "text-gray-500 hover:text-gray-700"
 										)}
 									>
 										{t('nav.english')}
@@ -170,7 +170,7 @@ export function FloatingHeader() {
 										onClick={() => handleLangChange('FR')}
 										className={cn(
 											"flex-1 py-3 text-sm font-bold rounded-lg transition-colors",
-											lang === 'FR' ? "bg-white shadow-sm text-[#363B81]" : "text-gray-500 hover:text-gray-700"
+											lang === 'FR' ? "bg-white shadow-sm text-[#1e40af]" : "text-gray-500 hover:text-gray-700"
 										)}
 									>
 										{t('nav.french')}
@@ -179,7 +179,7 @@ export function FloatingHeader() {
 								<Link 
 									to="/contact" 
 									onClick={() => setOpen(false)} 
-									className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#4278c4] to-[#363B81] text-white px-6 py-4 text-lg font-bold shadow-md"
+									className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#4278c4] to-[#1e40af] text-white px-6 py-4 text-lg font-bold shadow-md"
 								>
 									{t('nav.getFreeQuote')}
 									<ArrowRight className="w-5 h-5" />

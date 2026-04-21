@@ -111,7 +111,7 @@ export default function Home() {
             {[
               {
                 id: 'maconnerie',
-                icon: <Hammer className="w-12 h-12 text-[#363B81]" />,
+                icon: <Hammer className="w-12 h-12 text-[#1e40af]" />,
                 title: isFr ? 'Maçonnerie' : 'Masonry',
                 items: isFr ? [
                   "Joints de brique et pierre",
@@ -144,7 +144,7 @@ export default function Home() {
               },
               {
                 id: 'menuiserie',
-                icon: <Wrench className="w-12 h-12 text-[#363B81]" />,
+                icon: <Wrench className="w-12 h-12 text-[#1e40af]" />,
                 title: isFr ? 'Menuiserie' : 'Carpentry',
                 items: isFr ? [
                   "Pose de céramique",
@@ -184,7 +184,7 @@ export default function Home() {
               },
               {
                 id: 'structure',
-                icon: <Ruler className="w-12 h-12 text-[#363B81]" />,
+                icon: <Ruler className="w-12 h-12 text-[#1e40af]" />,
                 title: 'Structure',
                 items: isFr ? [
                   "Murs porteurs de maçonnerie",
@@ -205,7 +205,7 @@ export default function Home() {
               },
               {
                 id: 'finition',
-                icon: <Paintbrush className="w-12 h-12 text-[#363B81]" />,
+                icon: <Paintbrush className="w-12 h-12 text-[#1e40af]" />,
                 title: isFr ? 'Finition' : 'Finishing',
                 items: isFr ? [
                   "Peinture intérieure",
@@ -283,21 +283,21 @@ export default function Home() {
             
             {/* Step 1 */}
             <motion.div variants={fadeInUp} className="relative flex flex-col items-center text-center">
-              <div className="w-20 h-20 rounded-full bg-[#363B81] flex items-center justify-center text-white text-2xl font-bold mb-6 relative z-10 shadow-lg shadow-blue-900/20">1</div>
+              <div className="w-20 h-20 rounded-full bg-[#1e40af] flex items-center justify-center text-white text-2xl font-bold mb-6 relative z-10 shadow-lg shadow-blue-900/20">1</div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">{t('home.process.step1')}</h3>
               <p className="text-gray-600">{t('home.process.step1Desc')}</p>
             </motion.div>
             
             {/* Step 2 */}
             <motion.div variants={fadeInUp} className="relative flex flex-col items-center text-center">
-              <div className="w-20 h-20 rounded-full bg-[#363B81] flex items-center justify-center text-white text-2xl font-bold mb-6 relative z-10 shadow-lg shadow-blue-900/20">2</div>
+              <div className="w-20 h-20 rounded-full bg-[#1e40af] flex items-center justify-center text-white text-2xl font-bold mb-6 relative z-10 shadow-lg shadow-blue-900/20">2</div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">{t('home.process.step2')}</h3>
               <p className="text-gray-600">{t('home.process.step2Desc')}</p>
             </motion.div>
             
             {/* Step 3 */}
             <motion.div variants={fadeInUp} className="relative flex flex-col items-center text-center">
-              <div className="w-20 h-20 rounded-full bg-[#363B81] flex items-center justify-center text-white text-2xl font-bold mb-6 relative z-10 shadow-lg shadow-blue-900/20">3</div>
+              <div className="w-20 h-20 rounded-full bg-[#1e40af] flex items-center justify-center text-white text-2xl font-bold mb-6 relative z-10 shadow-lg shadow-blue-900/20">3</div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">{t('home.process.step3')}</h3>
               <p className="text-gray-600">{t('home.process.step3Desc')}</p>
             </motion.div>
@@ -334,19 +334,19 @@ export default function Home() {
             
             <ul className="space-y-4 mb-10">
               <li className="flex items-center text-gray-300">
-                <div className="w-2 h-2 rounded-full bg-[#363B81] mr-4"></div>
+                <div className="w-2 h-2 rounded-full bg-[#1e40af] mr-4"></div>
                 {t('home.whyUs.point1')}
               </li>
               <li className="flex items-center text-gray-300">
-                <div className="w-2 h-2 rounded-full bg-[#363B81] mr-4"></div>
+                <div className="w-2 h-2 rounded-full bg-[#1e40af] mr-4"></div>
                 {t('home.whyUs.point2')}
               </li>
               <li className="flex items-center text-gray-300">
-                <div className="w-2 h-2 rounded-full bg-[#363B81] mr-4"></div>
+                <div className="w-2 h-2 rounded-full bg-[#1e40af] mr-4"></div>
                 {t('home.whyUs.point3')}
               </li>
               <li className="flex items-center text-gray-300">
-                <div className="w-2 h-2 rounded-full bg-[#363B81] mr-4"></div>
+                <div className="w-2 h-2 rounded-full bg-[#1e40af] mr-4"></div>
                 {t('home.whyUs.point4')}
               </li>
             </ul>
@@ -358,7 +358,7 @@ export default function Home() {
             <div>
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center bg-[#363B81] text-white font-bold py-3 px-8 rounded-full hover:bg-[#363B81] transition-colors duration-200 shadow-lg"
+                className="inline-flex items-center justify-center bg-[#1e40af] text-white font-bold py-3 px-8 rounded-full hover:bg-[#1e40af] transition-colors duration-200 shadow-lg"
               >
                 {t('home.whyUs.getQuote')} <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
@@ -493,7 +493,7 @@ export default function Home() {
                 href={googleReviewLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-full bg-white text-[#1f3f84] px-6 py-3 text-sm font-bold hover:bg-gray-100 transition-colors"
+                className="inline-flex items-center justify-center rounded-full bg-white text-[#1e3a8a] px-6 py-3 text-sm font-bold hover:bg-gray-100 transition-colors"
               >
                 {t('home.testimonials.reviewCtaButton')} <ArrowRight className="ml-2 w-4 h-4" />
               </a>

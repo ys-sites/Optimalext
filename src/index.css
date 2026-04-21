@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  --color-blue-50: #eef0fe;
-  --color-blue-100: #d6ddfb;
-  --color-blue-200: #b5c4f7;
-  --color-blue-300: #8aa3f1;
-  --color-blue-400: #5e7eea;
-  --color-blue-500: #494ea1;
-  --color-blue-600: #363B81;
-  --color-blue-700: #2E3073;
-  --color-blue-800: #272863;
-  --color-blue-900: #1A1C4B;
+  --color-blue-50: #eff6ff;
+  --color-blue-100: #dbeafe;
+  --color-blue-200: #bfdbfe;
+  --color-blue-300: #93c5fd;
+  --color-blue-400: #60a5fa;
+  --color-blue-500: #3b82f6;
+  --color-blue-600: #2563eb;
+  --color-blue-700: #1d4ed8;
+  --color-blue-800: #1e40af;
+  --color-blue-900: #1e3a8a;
 
   --animate-marquee-vertical: marquee-vertical 30s linear infinite;
   --animate-marquee-vertical-slow: marquee-vertical 40s linear infinite;
@@ -31,18 +31,18 @@
 }
 
 .theme-gradient {
-  background: linear-gradient(90deg, #5770c8 0%, #2f2a74 100%);
+  background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
 }
 .theme-gradient:hover {
-  background: linear-gradient(90deg, #485eb0 0%, #221e5e 100%);
+  background: linear-gradient(135deg, #2563eb 0%, #1e3a8a 100%);
 }
 .text-theme-gradient {
-  background: linear-gradient(90deg, #5770c8 0%, #2f2a74 100%);
+  background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .theme-gradient-br {
-  background: linear-gradient(135deg, #1b194a 0%, #2f2a74 50%, #5770c8 100%);
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #2563eb 100%);
 }
 
 .services-scroll {
