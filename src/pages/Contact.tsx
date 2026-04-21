@@ -145,8 +145,8 @@ export default function Contact() {
                 </button>
               </motion.div>
             ) : (
-              <form className="space-y-8" onSubmit={handleSubmit}>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <form className="space-y-4 md:space-y-8" onSubmit={handleSubmit}>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
                   <div className="space-y-2">
                     <label className="block text-sm font-bold text-gray-900">{t('home.contact.fullName')}</label>
                     <input 
@@ -155,7 +155,7 @@ export default function Contact() {
                       placeholder={t('contactPage.placeholderName')}
                       value={formData.fullName}
                       onChange={(e) => setFormData({...formData, fullName: e.target.value})}
-                      className="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-gray-900 placeholder:text-gray-400"
+                      className="w-full px-4 py-3 md:px-5 md:py-4 rounded-xl bg-gray-50 border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-gray-900 placeholder:text-gray-400"
                     />
                   </div>
                   <div className="space-y-2">
@@ -166,7 +166,7 @@ export default function Contact() {
                       placeholder="(514) 622-1599"
                       value={formData.phone}
                       onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                      className="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-gray-900 placeholder:text-gray-400"
+                      className="w-full px-4 py-3 md:px-5 md:py-4 rounded-xl bg-gray-50 border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-gray-900 placeholder:text-gray-400"
                     />
                   </div>
                   <div className="space-y-2">
@@ -177,7 +177,7 @@ export default function Contact() {
                       placeholder={t('contactPage.placeholderEmail')}
                       value={formData.email}
                       onChange={(e) => setFormData({...formData, email: e.target.value})}
-                      className="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-gray-900 placeholder:text-gray-400"
+                      className="w-full px-4 py-3 md:px-5 md:py-4 rounded-xl bg-gray-50 border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-gray-900 placeholder:text-gray-400"
                     />
                   </div>
                   <div className="space-y-2">
@@ -188,7 +188,7 @@ export default function Contact() {
                       placeholder={t('contactPage.placeholderCity')}
                       value={formData.city}
                       onChange={(e) => setFormData({...formData, city: e.target.value})}
-                      className="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-gray-900 placeholder:text-gray-400"
+                      className="w-full px-4 py-3 md:px-5 md:py-4 rounded-xl bg-gray-50 border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-gray-900 placeholder:text-gray-400"
                     />
                   </div>
                 </div>
@@ -199,7 +199,7 @@ export default function Contact() {
                     required
                     value={formData.service}
                     onChange={(e) => setFormData({...formData, service: e.target.value})}
-                    className="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-gray-900 appearance-none cursor-pointer"
+                    className="w-full px-4 py-3 md:px-5 md:py-4 rounded-xl bg-gray-50 border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-gray-900 appearance-none cursor-pointer"
                   >
                     <option value="">{t('home.contact.selectService')}</option>
                     <option value="interior">{t('home.services.interior')}</option>
@@ -216,7 +216,7 @@ export default function Contact() {
                     placeholder={t('home.contact.detailsPlaceholder')}
                     value={formData.details}
                     onChange={(e) => setFormData({...formData, details: e.target.value})}
-                    className="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-gray-900 placeholder:text-gray-400 resize-none"
+                    className="w-full px-4 py-3 md:px-5 md:py-4 rounded-xl bg-gray-50 border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-gray-900 placeholder:text-gray-400 resize-none"
                   ></textarea>
                 </div>
 
