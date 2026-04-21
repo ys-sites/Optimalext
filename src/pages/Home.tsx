@@ -43,11 +43,11 @@ export default function Home() {
             variants={staggerContainer}
             className="max-w-3xl"
           >
-            <motion.div variants={fadeInUp} className="inline-flex items-center px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30 mb-6 text-sm font-medium backdrop-blur-sm">
+            <motion.div variants={fadeInUp} className="inline-flex items-center px-3 py-1 rounded-full bg-blue-500/20 text-blue-500 border border-blue-500/30 mb-6 text-sm font-medium backdrop-blur-sm">
               <Star className="w-4 h-4 mr-2 fill-current" /> {t('home.hero.topRated')}
             </motion.div>
             <motion.h1 variants={fadeInUp} className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
-              {t('home.hero.title1')}<br/> <span className="text-blue-400">{t('home.hero.title2')}</span>
+              {t('home.hero.title1')}<br/> <span className="text-blue-600">{t('home.hero.title2')}</span>
             </motion.h1>
             <motion.p variants={fadeInUp} className="text-xl text-gray-300 mb-10 max-w-2xl leading-relaxed">
               {t('home.hero.subtitle')}
@@ -426,9 +426,9 @@ export default function Home() {
           backgroundPosition: 'center',
         }}
       >
-        <div className="absolute inset-0 bg-[#eab308]/90"></div> {/* Yellow/Amber blend overlay */}
-        <div className="absolute left-0 top-0 w-16 md:w-32 h-full bg-gradient-to-r from-[#eab308] to-transparent z-10 pointer-events-none"></div>
-        <div className="absolute right-0 top-0 w-16 md:w-32 h-full bg-gradient-to-l from-[#eab308] to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute inset-0 bg-blue-800/90"></div> {/* Blue blend overlay */}
+        <div className="absolute left-0 top-0 w-16 md:w-32 h-full bg-gradient-to-r from-blue-800 to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute right-0 top-0 w-16 md:w-32 h-full bg-gradient-to-l from-blue-800 to-transparent z-10 pointer-events-none"></div>
         <div className="text-center mb-8 relative z-20">
           <h2 className="text-white font-extrabold text-2xl md:text-4xl uppercase tracking-wider px-4 drop-shadow-md">
             NOUS SOMMES MEMBRES EN RÈGLE
