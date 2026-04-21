@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { CheckCircle2, Star, ArrowRight, Paintbrush, ShieldCheck, Clock, Hammer, Wrench, Ruler } from "lucide-react";
+import { CheckCircle2, Star, ArrowRight, Paintbrush, ShieldCheck, Clock, Hammer, Wrench, Ruler, Facebook } from "lucide-react";
 import { motion } from "motion/react";
 import { TestimonialMarquee } from "../components/TestimonialMarquee";
 import { useTranslation } from "react-i18next";
@@ -30,7 +30,7 @@ export default function Home() {
       <section 
         className="relative bg-gray-900 text-white pb-32 overflow-hidden min-h-[85vh] flex items-center"
         style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1920&auto=format&fit=crop")',
+          backgroundImage: 'url("/hero.jpeg")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -59,12 +59,23 @@ export default function Home() {
               >
                 {t('home.hero.getQuote')} <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
               </Link>
-              <Link
-                to="/#services"
-                className="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-full font-bold text-lg transition-all text-center flex items-center justify-center"
-              >
-                {t('home.hero.ourServices')}
-              </Link>
+              <div className="flex flex-row gap-4 md:flex-1 w-full relative z-10">
+                <Link
+                  to="/#services"
+                  className="flex-1 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-full font-bold text-lg transition-all text-center flex items-center justify-center"
+                >
+                  {t('home.hero.ourServices')}
+                </Link>
+                <a
+                  href="https://www.facebook.com/optimalext"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-[60px] h-[60px] md:w-auto md:aspect-square bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white rounded-full flex items-center justify-center transition-all shadow-[0_8px_30px_rgba(0,0,0,0.12)] group/fb flex-shrink-0"
+                  aria-label="Facebook"
+                >
+                  <Facebook className="w-6 h-6 group-hover/fb:text-blue-400 group-hover/fb:scale-110 transition-all" />
+                </a>
+              </div>
             </motion.div>
 
           </motion.div>
@@ -298,8 +309,8 @@ export default function Home() {
       <section className="bg-[#0a0a0a] flex flex-col lg:flex-row">
         <div className="optimalext-about-visual lg:w-1/2 relative min-h-[300px] md:min-h-[400px] lg:min-h-auto overflow-hidden">
           <img 
-            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1000&auto=format&fit=crop" 
-            alt="Professional Painter" 
+            src="/about.jpeg" 
+            alt="About Optimalext" 
             className="optimalext-about-image absolute inset-0 w-full h-full object-cover object-[68%_center] lg:object-center"
           />
         </div>

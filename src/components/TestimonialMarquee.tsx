@@ -48,7 +48,7 @@ export function TestimonialMarquee() {
       </div>
       
       <div className="flex-1 overflow-hidden relative hidden md:block">
-        <div className="animate-marquee-vertical-slow flex flex-col">
+        <div className="animate-marquee-vertical flex flex-col">
           {column2.map((review, i) => (
             <ReviewCard key={i} review={review} />
           ))}
@@ -56,7 +56,7 @@ export function TestimonialMarquee() {
       </div>
 
       <div className="flex-1 overflow-hidden relative hidden lg:block">
-        <div className="animate-marquee-vertical-fast flex flex-col">
+        <div className="animate-marquee-vertical flex flex-col">
           {column3.map((review, i) => (
             <ReviewCard key={i} review={review} />
           ))}
