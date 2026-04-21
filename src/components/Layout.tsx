@@ -134,9 +134,14 @@ export default function Layout() {
           </div>
           
           <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-500 text-sm mb-4 md:mb-0 font-medium">
-              &copy; {new Date().getFullYear()} Renevation a Montreal. {t('footer.rights')}
-            </p>
+            <div className="mb-4 md:mb-0 text-center md:text-left">
+              <p className="text-gray-500 text-sm font-medium">
+                &copy; {new Date().getFullYear()} Renevation a Montreal. {t('footer.rights')}
+              </p>
+              <p className="text-gray-500 text-xs mt-1 font-medium">
+                Régie du Bâtiment du Québec # 8110-4697-33
+              </p>
+            </div>
             <div className="flex space-x-6">
               <a href="https://www.facebook.com/optimalext" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-600 transition-colors">
                 <span className="sr-only">Facebook</span>
