@@ -354,7 +354,7 @@ export default function Home() {
           <img 
             src="/about.jpeg" 
             alt="About Optimalext" 
-            className="optimalext-about-image absolute inset-0 w-full h-full object-cover object-left md:object-[calc(0%-20%)_center] lg:object-center"
+            className="optimalext-about-image absolute inset-0 w-full h-full object-cover object-[68%_center] md:object-[calc(0%-20%)_center] lg:object-center"
           />
         </div>
         <div className="lg:w-1/2 p-8 md:p-12 lg:p-24 flex flex-col justify-center">
