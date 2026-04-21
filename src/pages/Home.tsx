@@ -62,7 +62,7 @@ export default function Home() {
               <div className="flex flex-row gap-4 md:flex-1 w-full relative z-10">
                 <Link
                   to="/#services"
-                  className="flex-1 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-full font-bold text-lg transition-all text-center flex items-center justify-center"
+                  className="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-full font-bold text-lg transition-all text-center flex items-center justify-center whitespace-nowrap"
                 >
                   {t('home.hero.ourServices')}
                 </Link>
