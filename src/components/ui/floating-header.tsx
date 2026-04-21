@@ -57,7 +57,7 @@ export function FloatingHeader() {
 							e.currentTarget.nextElementSibling?.classList.remove('hidden');
 						}}
 					/>
-					<div className="hidden sm:block">
+					<div className="block">
 						<p className="font-sans text-xl font-extrabold text-gray-900 tracking-tight">OPTIMALEXT</p>
 					</div>
 				</Link>
