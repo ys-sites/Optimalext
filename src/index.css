@@ -46,24 +46,23 @@
 }
 
 .services-scroll {
-  overflow-y: auto;
+  overflow-y: scroll !important;
   scrollbar-width: thin;
   scrollbar-color: rgba(255, 255, 255, 0.8) rgba(255, 255, 255, 0.1);
-  -webkit-overflow-scrolling: touch;
 }
 .services-scroll::-webkit-scrollbar {
-  -webkit-appearance: none !important;
-  appearance: none !important;
-  width: 10px !important;
-  display: block !important;
+  -webkit-appearance: none;
+  width: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
 }
 .services-scroll::-webkit-scrollbar-track {
-  background-color: rgba(255, 255, 255, 0.1) !important;
-  border-radius: 10px !important;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
 }
 .services-scroll::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 0.8) !important;
-  border-radius: 10px !important;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
 }
 .services-scroll::-webkit-scrollbar-button:vertical:decrement {
   display: block;
