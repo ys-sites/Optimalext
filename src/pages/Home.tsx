@@ -43,7 +43,7 @@ export default function Home() {
             variants={staggerContainer}
             className="max-w-3xl"
           >
-            <motion.div variants={fadeInUp} className="inline-flex items-center px-3 py-1 rounded-full bg-blue-800/20 text-blue-700 border border-blue-500/30 mb-6 text-sm font-medium backdrop-blur-sm">
+            <motion.div variants={fadeInUp} className="inline-flex items-center px-3 py-1 rounded-full bg-blue-900/10 text-blue-800 mb-6 text-sm font-bold">
               <Star className="w-4 h-4 mr-2 fill-current" /> {t('home.hero.topRated')}
             </motion.div>
             <motion.h1 variants={fadeInUp} className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
@@ -55,7 +55,7 @@ export default function Home() {
             <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 mb-6">
               <Link
                 to="/contact"
-                className="theme-gradient text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg shadow-blue-900/30 text-center flex items-center justify-center group"
+                className="theme-gradient text-white px-8 py-4 rounded-full font-bold text-lg transition-all text-center flex items-center justify-center group"
               >
                 {t('home.hero.getQuote')} <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
               </Link>
