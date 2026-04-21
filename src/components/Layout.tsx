@@ -68,9 +68,17 @@ export default function Layout() {
       <a
         href={contactFormHref}
         aria-label={t("layout.openContactForm")}
-        className="lg:hidden fixed bottom-5 right-5 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#1e40af] text-white shadow-[0_18px_35px_rgba(54,59,129,0.35)] transition-transform duration-200 active:scale-95"
+        className="fixed bottom-6 right-6 z-50 flex items-center group"
       >
-        <Phone className="h-6 w-6" />
+        <span className="absolute right-full mr-4 bg-white text-blue-900 px-5 py-3 rounded-2xl text-sm font-bold shadow-xl opacity-0 group-hover:opacity-100 transition-all scale-95 group-hover:scale-100 whitespace-nowrap pointer-events-none border border-blue-100 hidden sm:block">
+          {t('nav.scheduleAppointment', 'Schedule an Appointment')}
+        </span>
+        <div className="relative flex items-center justify-center">
+          <div className="absolute w-full h-full rounded-full bg-[#1e40af] animate-ping opacity-20" />
+          <div className="h-14 w-14 rounded-full bg-[#1e40af] text-white shadow-[0_18px_35px_rgba(30,64,175,0.4)] flex items-center justify-center transition-transform duration-200 group-hover:scale-110 group-active:scale-95 group-hover:bg-blue-600 relative z-10">
+            <Phone className="h-6 w-6 group-hover:animate-bounce" />
+          </div>
+        </div>
       </a>
 
       {/* Footer */}

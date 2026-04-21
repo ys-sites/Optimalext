@@ -12,7 +12,7 @@ type Review = {
 // Duplicate reviews to create a seamless loop
 const ReviewCard: React.FC<{ review: Review }> = ({ review }) => (
   <div className="bg-[#11111a] border border-white/5 rounded-xl p-6 mb-6 shadow-lg">
-    <div className="flex text-red-500 mb-4">
+    <div className="flex text-blue-500 mb-4">
       {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
     </div>
     <h4 className="text-white font-bold text-lg mb-3">"{review.title}"</h4>
