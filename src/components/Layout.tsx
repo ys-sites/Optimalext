@@ -90,7 +90,7 @@ export default function Layout() {
                 <img 
                   src="/logo.png" 
                   alt="Renevation a Montreal Logo" 
-                  className="h-[4.5rem] w-auto object-contain" 
+                  className="h-24 md:h-32 w-auto object-contain" 
                   onError={(e) => {
                     e.currentTarget.style.display = 'none';
                     e.currentTarget.nextElementSibling?.classList.remove('hidden');

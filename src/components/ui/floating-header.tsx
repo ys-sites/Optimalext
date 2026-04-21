@@ -51,7 +51,7 @@ export function FloatingHeader() {
 					<img 
 						src="/logo.png" 
 						alt="Renevation a Montreal Logo" 
-						className="h-[4.5rem] sm:h-16 md:h-[4.5rem] w-auto object-contain" 
+						className="h-10 sm:h-12 w-auto object-contain" 
 						onError={(e) => {
 							e.currentTarget.style.display = 'none';
 							e.currentTarget.nextElementSibling?.classList.remove('hidden');
