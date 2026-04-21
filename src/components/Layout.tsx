@@ -78,7 +78,7 @@ export default function Layout() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] gap-12 mb-12">
             <div>
-              <div className="flex items-center mb-6">
+              <div className="flex items-center mb-6 gap-3">
                 <img 
                   src="/logo.png" 
                   alt="Renevation a Montreal Logo" 
@@ -88,8 +88,8 @@ export default function Layout() {
                     e.currentTarget.nextElementSibling?.classList.remove('hidden');
                   }}
                 />
-                <div className="hidden items-center">
-                  <span className="font-bold text-2xl tracking-tight text-gray-900">Renevation a Montreal</span>
+                <div className="flex items-center">
+                  <span className="font-bold text-2xl tracking-tight text-gray-900">OPTIMALEXT</span>
                 </div>
               </div>
               <p className="text-gray-600 mb-6">
