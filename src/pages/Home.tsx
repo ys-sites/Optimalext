@@ -43,11 +43,11 @@ export default function Home() {
             variants={staggerContainer}
             className="max-w-3xl"
           >
-            <motion.div variants={fadeInUp} className="inline-flex items-center px-3 py-1 rounded-full bg-blue-500/20 text-blue-500 border border-blue-500/30 mb-6 text-sm font-medium backdrop-blur-sm">
+            <motion.div variants={fadeInUp} className="inline-flex items-center px-3 py-1 rounded-full bg-blue-800/20 text-blue-700 border border-blue-500/30 mb-6 text-sm font-medium backdrop-blur-sm">
               <Star className="w-4 h-4 mr-2 fill-current" /> {t('home.hero.topRated')}
             </motion.div>
             <motion.h1 variants={fadeInUp} className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
-              {t('home.hero.title1')}<br/> <span className="text-blue-600">{t('home.hero.title2')}</span>
+              {t('home.hero.title1')}<br/> <span className="text-blue-800">{t('home.hero.title2')}</span>
             </motion.h1>
             <motion.p variants={fadeInUp} className="text-xl text-gray-300 mb-10 max-w-2xl leading-relaxed">
               {t('home.hero.subtitle')}
