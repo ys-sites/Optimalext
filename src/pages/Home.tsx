@@ -30,7 +30,7 @@ export default function Home() {
       <section 
         className="relative bg-gray-900 text-white pb-32 overflow-hidden min-h-[85vh] flex items-center"
         style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1920&auto=format&fit=crop")',
+          backgroundImage: 'url("/hero.jpeg")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -298,8 +298,8 @@ export default function Home() {
       <section className="bg-[#0a0a0a] flex flex-col lg:flex-row">
         <div className="optimalext-about-visual lg:w-1/2 relative min-h-[300px] md:min-h-[400px] lg:min-h-auto overflow-hidden">
           <img 
-            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1000&auto=format&fit=crop" 
-            alt="Professional Painter" 
+            src="/about.jpeg" 
+            alt="About Optimalext" 
             className="optimalext-about-image absolute inset-0 w-full h-full object-cover object-[68%_center] lg:object-center"
           />
         </div>
