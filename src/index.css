@@ -48,22 +48,34 @@
 .services-scroll {
   overflow-y: auto;
   scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.6) rgba(255, 255, 255, 0.1);
+  scrollbar-color: rgba(255, 255, 255, 0.8) rgba(255, 255, 255, 0.1);
   -webkit-overflow-scrolling: touch;
 }
 .services-scroll::-webkit-scrollbar {
   -webkit-appearance: none !important;
   appearance: none !important;
-  width: 6px !important;
+  width: 10px !important;
   display: block !important;
 }
 .services-scroll::-webkit-scrollbar-track {
   background-color: rgba(255, 255, 255, 0.1) !important;
-  border-radius: 6px !important;
+  border-radius: 10px !important;
 }
 .services-scroll::-webkit-scrollbar-thumb {
   background-color: rgba(255, 255, 255, 0.8) !important;
-  border-radius: 6px !important;
+  border-radius: 10px !important;
+}
+.services-scroll::-webkit-scrollbar-button:vertical:decrement {
+  display: block;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='18 15 12 9 6 15'%3E%3C/polyline%3E%3C/svg%3E") no-repeat center center;
+  background-size: 10px 10px;
+  height: 16px;
+}
+.services-scroll::-webkit-scrollbar-button:vertical:increment {
+  display: block;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E") no-repeat center center;
+  background-size: 10px 10px;
+  height: 16px;
 }
 
 .city-ticker-track {
